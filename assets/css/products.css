@@ -112,3 +112,32 @@ section p{
     box-sizing: border-box;
     width: 100%;
 }
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .navbar, .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .unorderedlist {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-list {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .product {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    main > h2, section > h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+}
